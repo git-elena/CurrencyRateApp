@@ -1,4 +1,19 @@
+<h2>Task 1:</h2>
+<pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">fun safeDivide(a: Int?, b: Int?): Int? {
+    return if (a != null && b != null) {
+        a / b
+    } else {
+        null
+    }
+}</code></div></div></pre>
 
+<h2>Task 2:</h2>
+<pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">fun String.countVowels(): Int {
+    val vowels = "aeiouAEIOU"
+    return this.count { it in vowels }
+}</code></div></div></pre>
+
+  <h2>Task 3:</h2>
   <h1>CurrencyRateApp</h1>
     <p><strong>CurrencyRateApp</strong> is an Android application built with Kotlin that provides real-time currency exchange rates. 
       The app fetches data from a currency API, displays current rates, and allows users to convert between different currencies.</p>
