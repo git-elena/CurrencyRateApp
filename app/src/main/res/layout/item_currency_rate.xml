@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_currency_rate.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="12dp"
+    app:cardCornerRadius="11dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <!-- Currency code (e.g., USD) -->
+        <TextView
+            android:id="@+id/currency_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="USD"
+            android:textColor="@color/material_dynamic_neutral10"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Country name (e.g., USA) -->
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="USA"
+            android:textColor="@color/material_dynamic_neutral20"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/currency_code"
+            app:layout_constraintTop_toBottomOf="@+id/currency_code" />
+
+        <!-- Exchange rate (e.g., 22.873) -->
+        <TextView
+            android:id="@+id/currency_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="22.873"
+            android:textColor="@color/material_dynamic_neutral10"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/currency_code" />
+
+        <!-- Amount of currency (e.g., 1) -->
+        <TextView
+            android:id="@+id/currency_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="1"
+            android:textColor="@color/material_dynamic_neutral10"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/currency_name"
+            app:layout_constraintTop_toBottomOf="@+id/currency_value" />
+
+        <!-- Currency name (e.g., Dollar) -->
+        <TextView
+            android:id="@+id/currency_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="Dollar"
+            android:textColor="@color/material_dynamic_neutral20"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/equal"
+            app:layout_constraintTop_toBottomOf="@+id/currency_value" />
+
+        <!-- = -->
+        <TextView
+            android:id="@+id/equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="="
+            android:textColor="@color/material_dynamic_neutral20"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/currency_value_mini"
+            app:layout_constraintTop_toBottomOf="@+id/currency_value" />
+
+        <!-- Exchange rate mini (e.g., 22.873) -->
+        <TextView
+            android:id="@+id/currency_value_mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:text="22.873"
+            android:textColor="@color/material_dynamic_neutral20"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/kc"
+            app:layout_constraintTop_toBottomOf="@+id/currency_value" />
+
+        <!-- kč -->
+        <TextView
+            android:id="@+id/kc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="kč"
+            android:textColor="@color/material_dynamic_neutral20"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/currency_value"
+            app:layout_constraintTop_toBottomOf="@+id/currency_value" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
