@@ -15,6 +15,7 @@
 
   <h2>Task 3:</h2>
   <h1>CurrencyRateApp</h1>
+  <p><a href="https://github.com/git-elena/CurrencyRateApp/blob/main/app-debug.apk">app-debug.apk</a></p>
     <p><strong>CurrencyRateApp</strong> is an Android application built with Kotlin that provides real-time currency exchange rates. 
       The app fetches data from a currency API, displays current rates, and allows users to convert between different currencies.</p>
       <h2>Features</h2>
